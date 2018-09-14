@@ -26,7 +26,8 @@
 
 # -----------------
 # Task 5 Answer
-# mv 'purdue buildings'/'Professor '* 'purdue professors'/'computer science professors'/--------------
+# mv 'purdue buildings'/'Professor '* 'purdue professors'/'computer science professors'/
+--------------
 
 # -----------------
 # Task 6 Answer
