@@ -4,7 +4,7 @@
 
 # -----------------
 # Task 1 Answer
-# -mv 'purdue classes'/math/maa162 'purdue classes'/math/ma162
+# mv 'purdue classes'/math/maa162 'purdue classes'/math/ma162
 ----------------
 
 # -----------------
@@ -14,139 +14,22 @@
 
 # -----------------
 # Task 3 Answer
-# -mv 'purdue classes'/"computer science"/ma261 'purdue classes'/math
+# mv 'purdue classes'/"computer science"/ma261 'purdue classes'/math
 ----------------
 
 # -----------------
 # Task 4 Answer
-# -----------------
+# mkdir -p / 'purdue professors'/'computer science professors'
+
+
+-----------------
 
 # -----------------
 # Task 5 Answer
-# -----------------
+# mv 'purdue buildings'/'Professor '* 'purdue professors'/'computer science professors'/--------------
 
 # -----------------
 # Task 6 Answer
-# ----------------
+# ls -R
+----------------
 
-sslab14 51 $ git clone
-fatal: You must specify a repository to clone.
-
-usage: git clone [<options>] [--] <repo> [<dir>]
-
-    -v, --verbose         be more verbose
-    -q, --quiet           be more quiet
-    --progress            force progress reporting
-    -n, --no-checkout     don't create a checkout
-    --bare                create a bare repository
-    --mirror              create a mirror repository (implies bare)
-    -l, --local           to clone from a local repository
-    --no-hardlinks        don't use local hardlinks, always copy
-    -s, --shared          setup as shared repository
-    --recurse-submodules[=<pathspec>]
-                          initialize submodules in the clone
-    -j, --jobs <n>        number of submodules cloned in parallel
-    --template <template-directory>
-                          directory from which templates will be used
-    --reference <repo>    reference repository
-    --reference-if-able <repo>
-                          reference repository
-    --dissociate          use --reference only while cloning
-    -o, --origin <name>   use <name> instead of 'origin' to track upstream
-    -b, --branch <branch>
-                          checkout <branch> instead of the remote's HEAD
-    -u, --upload-pack <path>
-                          path to git-upload-pack on the remote
-    --depth <depth>       create a shallow clone of that depth
-    --shallow-since <time>
-                          create a shallow clone since a specific time
-    --shallow-exclude <revision>
-                          deepen history of shallow clone, excluding rev
-    --single-branch       clone only one branch, HEAD or --branch
-    --no-tags             don't clone any tags, and make later fetches not to follow them
-    --shallow-submodules  any cloned submodules will be shallow
-    --separate-git-dir <gitdir>
-                          separate git dir from working tree
-    -c, --config <key=value>
-                          set config inside the new repository
-    -4, --ipv4            use IPv4 addresses only
-    -6, --ipv6            use IPv6 addresses only
-    --filter <args>       object filtering
-
-sslab14 52 $ git clone https://github.com/Purdue-CS193/lab-2-bdonohue1.git
-Cloning into 'lab-2-bdonohue1'...
-Username for 'https://github.com': bdonohue1
-Password for 'https://bdonohue1@github.com': 
-remote: Counting objects: 129, done.
-remote: Compressing objects: 100% (72/72), done.
-remote: Total 129 (delta 52), reused 129 (delta 52), pack-reused 0
-Receiving objects: 100% (129/129), 33.83 KiB | 1.54 MiB/s, done.
-Resolving deltas: 100% (52/52), done.
-sslab14 53 $ 1s
-bash: 1s: command not found
-sslab14 54 $ cd lab-2-bdonohue1
-sslab14 55 $ bash lab2init
-
-directory ~/cs193lab2 reset!
-sslab14 56 $ cd ~
-sslab14 57 $ cd cs193lab2
-sslab14 58 $ ls
-'purdue buildings'  'purdue classes'
-sslab14 59 $ mv maa162.text ma162.text
-mv: cannot stat 'maa162.text': No such file or directory
-sslab14 60 $ ls
-'purdue buildings'  'purdue classes'
-sslab14 61 $ maa162.text/cs193lab2/purdue classes/math/ma162.text
-bash: maa162.text/cs193lab2/purdue: No such file or directory
-sslab14 62 $ ls purdue classes
-ls: cannot access 'purdue': No such file or directory
-ls: cannot access 'classes': No such file or directory
-sslab14 63 $ mv 'purdue classes'/math/maa162 'purdue classes'/math/ma162
-sslab14 64 $ rm 'purdue classes/math/pol341
-> 
-> ^C
-sslab14 65 $ rm 'purdue classes'/math/pol341
-
-sslab14 66 $ ls
-'purdue buildings'  'purdue classes'
-sslab14 67 $ pwd
-/homes/bdonohue/cs193lab2
-sslab14 68 $ mv 'purdue classes'/computer science/ma261 'purdue classes'/math
-mv: cannot stat 'purdue classes/computer': No such file or directory
-mv: cannot stat 'science/ma261': No such file or directory
-sslab14 69 $ mv 'purdue classes'/"computer science"/ma261 'purdue classes'/math
-sslab14 70 $ mkdir "purdue professors"
-sslab14 71 $ mkdir "purdue professors" -p/"computer science professors"
-mkdir: invalid option -- '/'
-Try 'mkdir --help' for more information.
-sslab14 72 $ mkdir --help
-Usage: mkdir [OPTION]... DIRECTORY...
-Create the DIRECTORY(ies), if they do not already exist.
-
-Mandatory arguments to long options are mandatory for short options too.
-  -m, --mode=MODE   set file mode (as in chmod), not a=rwx - umask
-  -p, --parents     no error if existing, make parent directories as needed
-  -v, --verbose     print a message for each created directory
-  -Z                   set SELinux security context of each created directory
-                         to the default type
-      --context[=CTX]  like -Z, or if CTX is specified then set the SELinux
-                         or SMACK security context to CTX
-      --help     display this help and exit
-      --version  output version information and exit
-
-GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
-Full documentation at: <http://www.gnu.org/software/coreutils/mkdir>
-or available locally via: info '(coreutils) mkdir invocation'
-sslab14 73 $ 
-sslab14 73 $ rm "purdue professors"
-rm: cannot remove 'purdue professors': Is a directory
-sslab14 74 $ rm -r 'purdue professors
-> '
-rm: cannot remove 'purdue professors'$'\n': No such file or directory
-sslab14 75 $ rm -r 'purdue professors'
-sslab14 76 $ mkdir 'purdue professors -p/"computer science professors"
-> mkdir 'purdue professors -p/"computer science professors"/
-mkdir: invalid option -- '/'
-Try 'mkdir --help' for more information.
-sslab14 77 $ mkdir 'purdue professors -p/"computer science professors"
-mkdir 'purdue professors -p/"computer science professors"
